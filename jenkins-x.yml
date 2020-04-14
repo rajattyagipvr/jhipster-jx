@@ -1,4 +1,4 @@
-buildpack: none
+buildPack: none
 pipelineConfig:
   env:
     - name: JAVA_HOME
