@@ -35,7 +35,7 @@ pipelineConfig:
             image: gcr.io/jenkinsxio-labs/jxl
       setVersion:
         steps:
-          - sh: jx step tag --version \$(cat 1.0.0)
+          - sh: jx step tag --version "1.0.0"
             name: tag-version
       build:
         steps:
