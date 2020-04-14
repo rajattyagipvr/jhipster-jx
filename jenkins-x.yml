@@ -33,10 +33,6 @@ pipelineConfig:
           - sh: jx step git credentials
             when: "!prow"
             image: gcr.io/jenkinsxio-labs/jxl
-      setVersion:
-        steps:
-          - sh: jx step tag --version "1.0.0"
-            name: tag-version
       build:
         steps:
           - sh:  jhipster import-jd ./library.jh
