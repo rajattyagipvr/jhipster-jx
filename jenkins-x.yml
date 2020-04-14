@@ -1,11 +1,11 @@
 buildPack: none
 pipelineConfig:
+  env:
+    - name: "JAVA_HOME"
+      value: "/usr/lib/jvm/java-11-openjdk-amd64"
   agent:
     image: jhipster/jhipster
   pipelines:
-    env:
-      - name: "JAVA_HOME"
-      - value: "/usr/lib/jvm/java-11-openjdk-amd64"
     post:
       steps:
         - groovy: always
@@ -20,6 +20,9 @@ pipelineConfig:
           - sh: mvn install
             name: mvn-install
     release:
+      env:
+      - name: "JAVA_HOME"
+        value: "/usr/lib/jvm/java-11-openjdk-amd64"
       setup:
         steps:
           - groovy: git 'https://REPLACE_ME_GIT_PROVIDER/REPLACE_ME_ORG/REPLACE_ME_APP_NAME.git'
