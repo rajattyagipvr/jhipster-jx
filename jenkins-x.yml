@@ -4,8 +4,7 @@ pipelineConfig:
     - name: JAVA_HOME
     - value: /usr/lib/jvm/java-11-openjdk-amd64
   agent:
-    label: jhipster/jhipster
-    container: jhipster
+    image: jhipster/jhipster
   pipelines:
     post:
       steps:
