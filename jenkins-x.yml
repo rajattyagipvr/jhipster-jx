@@ -35,10 +35,7 @@ pipelineConfig:
             image: gcr.io/jenkinsxio-labs/jxl
       setVersion:
         steps:
-          - sh: jx step next-version --filename pom.xml
-            name: next-version
-            comment: so we can retrieve the version in later steps
-          - sh: jx step tag --version \$(cat VERSION)
+          - sh: jx step tag --version \$(cat 1.0.0)
             name: tag-version
       build:
         steps:
