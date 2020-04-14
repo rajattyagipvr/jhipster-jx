@@ -1,0 +1,26 @@
+
+Showing logs for build [32mrajattyagipvr-jhipster-jx-maste-svtsd-11[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-mf58f[0m
+{"level":"warn","ts":1586883448.8354962,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1586883448.835986,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mrajattyagipvr-jhipster-jx-maste-svtsd-11[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-d7942[0m
+{"level":"warn","ts":1586883449.2161977,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1586883449.2175522,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mrajattyagipvr-jhipster-jx-maste-svtsd-11[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mrajattyagipvr-jhipster-jx-maste-svtsd-11[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-rajattyagipvr-jhipster-jx-maste-svtsd-tm54s[0m
+{"level":"warn","ts":1586883565.4937336,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1586883567.5309358,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*************/jhipster-**.git @ v1.0.3 in path /workspace/source"}
+
+Showing logs for build [32mrajattyagipvr-jhipster-jx-maste-svtsd-11[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mrajattyagipvr-jhipster-jx-maste-svtsd-11[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /builder/home/git/credentials
+
+Showing logs for build [32mrajattyagipvr-jhipster-jx-maste-svtsd-11[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-step3[0m
+fatal: Unable to create '/workspace/source/.git/index.lock': Permission denied
+[31m
+Pipeline failed on stage 'from-build-pack' : container 'step-setup-step3'. The execution of the pipeline has stopped.[0m
